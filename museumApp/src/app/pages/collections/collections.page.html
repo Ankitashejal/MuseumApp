@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Collections</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button auto-hide="false"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- cards -->
+  <ion-card *ngFor="let card of collectionCards" >
+    <img alt={{card.alt}} src={{card.src}} />
+    <ion-card-header>
+      <ion-card-title>{{card.title}}</ion-card-title>
+      <ion-card-subtitle>{{card.subtitle}}</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      {{card.description}}
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

@@ -1,0 +1,54 @@
+ion-content {
+    --ion-background-color: black; // Set the background color
+  
+    ion-card {
+      margin: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); // Add a subtle box shadow
+      border-radius: 10px; // Round the corners
+  
+      img {
+        width: 100%;
+        border-radius: 10px 10px 0 0; // Round only the top corners of the image
+      }
+  
+      ion-card-header {
+        ion-card-title {
+          font-weight: bold;
+          font-size: 1.2em;
+        }
+  
+        ion-card-subtitle {
+          font-size: 0.9em;
+          color: #777;
+        }
+      }
+  
+      ion-card-content {
+        padding: 15px;
+        color: #888888;
+      }
+    }
+  }
+  
+  // Customize the toolbar color
+  ion-toolbar {
+    // --background: rgba(86, 82, 82, 0.82); // Replace with your desired color
+    --color: #fff; // Text color
+  }
+  
+  // Customize the title color
+  ion-title {
+    color: #fff;
+  }
+  
+  // Customize the menu button color
+  ion-menu-button {
+    --color: #fff;
+  }
+  
+  // Add more custom styles as needed
+  @media (max-width: 400px) {
+    img{
+        height: 90%;
+    }
+}
